@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Browse my dynamic portfolio projects with a comment section. See what I've built using PHP, MySQL, and modern web technologies.">
+  <meta name="description" content="Browse my dynamic portfolio projects. See what I've built using modern web technologies.">
   <title>Projects - Mohamad Nasrin Bin Mohd Yusoff</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -13,7 +13,7 @@
     <div class="site-name">Mohamad Nasrin</div>
     <nav>
       <ul class="nav">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about-me.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
       </ul>
@@ -47,29 +47,10 @@
         
         <div class="project-card">
           <h2>System Documentation for Corporate eLearning System</h2>
-          <p>Created a detailed Software Design Specification (SDS) for a corporate eLearning platform using the Waterfall model, outlining system architecture, components, and process flows.</p>
+          <p>Created a detailed Software Design Specification (SDS) for a corporate eLearning platform using the Waterfall model.</p>
           <a href="https://github.com/nasrinutm/system-documentation-for-corporate-elearning-system" target="_blank">GitHub</a>
         </div>
-        
       </div>
-    </section>
-
-    <section class="hero">
-	<div class="comments-section" >
-        <div class="form-container">
-            <h2 style="padding-bottom: 1rem">Leave a Comment</h2>
-            <form action="comment.php" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="comment">Comment:</label><br>
-                <textarea id="comment" name="comment" rows="4" required></textarea><br>
-                <input type="submit" value="Submit Comment">
-            </form>
-            <p id="comment-status" style="text-align: center; margin-top: 1rem;"></p>
-        </div>
-        <div class="form-container"><h2>Recent Comments</h2> <div class="existing-comments" id="existing-comments-container"</div>
-        </div>
-	</div>
     </section>
   </main>
 
