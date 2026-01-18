@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+border-radius: 5%
+}
+
+body {
+  line-height: 1.6;
+  text-align: left;
+}
+
+h1, h2, p, .site-name, .nav li a, .skills-container ul {
+  font-family: Georgia, serif;
+}
+
+header {
+  background: #135234;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  padding-bottom: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 24px;
+  padding-left: 10%
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.nav li a:hover {
+  color: #ffcc00;
+}
+
+h1 {
+  text-align: left;
+  font-size: 40px;
+}
+
+p {
+  text-align: justify;
+  font-size: 24px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.skills-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.row {
+  gap: 2rem;
+  padding: 0rem 15%;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;         /* wraps on small screens */
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1 1 45%;  
+  padding: 1rem;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects {
+  padding: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.project-card a {
+	margin-top: auto;	
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
+
+#theme-toggle {
+  margin-left: 20px; /* Space between nav items and button */
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.dark-theme header,
+.dark-theme footer {
+  background-color: #1f1f1f;
+}
+
+.dark-theme .project-card {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* Form Container Styling (General - applies to About Me contact form primarily) */
+.form-container {
+    background: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem 15% 1rem 15%;
+    text-align: left;
+}
+
+.form-container h2 {
+	text-align: center;
+}
+
+.form-container.dark-theme {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-container button {
+    display: block;
+    background-color: #135234;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    margin: 1.5rem auto 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-container button:hover {
+    background-color: #0d3824;
+}
+
+.comments-section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: left;
+    box-shadow: none;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+.comments-section > .form-container {
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+.comments-section > .form-container:nth-child(2) {
+    border-left: 2px solid #ccc;
+	padding-left: 2rem; /* optional: space between border and content */
+}
+
+.comments-section button, input[type="submit"]{
+    display: block;
+    background-color: #135234;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    margin: 1.5rem auto 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.comments-section.dark-theme {
+    background-color: #2a2a2a;
+    color: #fff;
+    box-shadow: none;
+}
+
+.comments-section.dark-theme > .form-container:nth-child(2) {
+    border-left-color: #666;
+}
+
+.comments-section.dark-theme > .form-container {
+    background: none;
+    box-shadow: none;
+}
+
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.comment:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.comment p {
+    margin: 0.5rem 0;
+}
+
+.comment .comment-meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.comments-section.dark-theme .comment .comment-meta {
+    color: #bbb;
+}
+
+@media (min-width: 1024px) {
+  section + section {
+    padding-top: 4rem;  /* or padding-top if you prefer internal spacing */
+  }
+}
+
+@media (max-width: 768px) {
+	h1 {
+	font-size: 30px;
+	}
+	
+	p {
+	font-size: 15px;
+	}
+	
+	.nav li a {
+	font-size: 15px;
+	}
+	
+	.skills-container ul {
+	list-style-type: disc;
+	padding-left: 15px;
+	text-align: left;
+	font-size: 15px;
+	}
+	
+	.site-name {
+	font-size: 16px;
+	}
+	
+   .project-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px; 
+    margin: 0 auto; 
+    max-width: 768px; 
+   }
+
+   .project-card {
+      width: 100%;
+   }
+
+   .row {
+    flex-direction: column;
+    align-items: center;
+	padding: 1rem 0;
+   }
+   
+   .form-container {
+	align-items: center;
+	padding: 0.5rem 0.5rem;
+	margin: 2rem 5%;
+    border-radius: 8px;
+   }
+   
+   .form-container label {
+    font-size: 1rem;
+	}
+
+  .column {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+	height: auto;
+	display: block;
+  }
+
+  .comments-section {
+    grid-template-columns: 1fr; 
+    width: 100%; 
+    max-width: 768px; 
+    margin: 2rem auto; 
+    padding: 1rem 15px; 
+    gap: 1rem; 
+    box-shadow: none; 
+  }
+
+  .comments-section > .form-container {
+    padding: 0 0rem; 
+  }
+  .comments-section > .form-container:nth-child(2) {
+	border-left: none;
+	padding: 0rem;
+  }
+}

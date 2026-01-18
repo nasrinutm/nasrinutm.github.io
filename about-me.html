@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Learn more about me and get in touch through the contact form. Discover my journey, background, and career goals.">
+  <title>About Me - Mohamad Nasrin Bin Mohd Yusoff</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header>
+  <div class="header-container">
+    <div class="site-name">Mohamad Nasrin</div>
+    <nav>
+      <ul class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+	  <div><button id="theme-toggle">🌙</button></div>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="hero">
+	  <div class="row">
+	  <h1>About Me</h1>
+		  <p>I'm a fulltime student at Universiti Teknologi Malaysia. I'm currently enrolled in the course Bachelor of Computer Science - Computer Networks and Security. 
+				I have a strong passion for cybersecurity, particularly in offensive security (red teaming), ethical hacking, and system exploitation. 
+				I also enjoy exploring computer architecture and low-level systems, as I believe understanding the hardware-software boundary is crucial for security professionals.</p>
+		  <p>Born and raised in Johor Bahru, I'm a curious and driven learner who enjoys solving technical challenges and continuously expanding my skills through hands-on labs, capture-the-flag competitions, and self-learning.
+		  </p>
+		  <p>My long-term goal is to become a cybersecurity architect, building secure systems and helping organizations defend against evolving threats.</p>
+		  </div>
+	  </div>
+    </section>
+    <section class="contact-me-section">
+        <div class="form-container">
+		<h2>Contact Me</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem;">Have a question or want to connect? Send me a message!</p>
+            <form action="contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="contact-status" style="text-align: center; margin-top: 1rem;"></p>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center;">Connect with me: 
+      <a href="https://github.com/nasrinutm">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/mohamad-nasrin-bin-mohd-yusoff-696801288/">LinkedIn</a>
+    </p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

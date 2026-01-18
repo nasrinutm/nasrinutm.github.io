@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Browse my dynamic portfolio projects with a comment section. See what I've built using PHP, MySQL, and modern web technologies.">
+  <title>Projects - Mohamad Nasrin Bin Mohd Yusoff</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <div class="site-name">Mohamad Nasrin</div>
+    <nav>
+      <ul class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    <div><button id="theme-toggle">🌙</button></div>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="hero">
+        <h1 style="padding-left: 10%">My Projects</h1>
+        <br>
+        <div class="project-grid">
+            <div class="project-card">
+            <h2>Network Infrastructure Setup</h2>
+            <p>Planned and implemented a complete LAN and Wi-Fi network for a new building, including switch configuration, firewall setup, and secure VLAN segmentation.</p>
+            <a href="https://github.com/nasrinutm/netcom-network-infra.git" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Postgraduate Supervision System Website</h2>
+          <p>Designed a website for managing postgraduate student-supervisor relationships, progress tracking, and communication.</p>
+          <a href="https://github.com/imanhafizuddin/Group9_Project1_SAD_20232024" target="_blank">GitHub</a>
+        </div>
+        
+        <div class="project-card">
+          <h2>College Complaint Database System</h2>
+          <p>Created a simple MySQL database system for college dormitory complaint management system for UTM.</p>
+          <a href="https://github.com/nasrinutm/college-dormitory-complaint-management-system.git" target="_blank">GitHub</a>
+        </div>
+        
+        <div class="project-card">
+          <h2>System Documentation for Corporate eLearning System</h2>
+          <p>Created a detailed Software Design Specification (SDS) for a corporate eLearning platform using the Waterfall model, outlining system architecture, components, and process flows.</p>
+          <a href="https://github.com/nasrinutm/system-documentation-for-corporate-elearning-system" target="_blank">GitHub</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="hero">
+	<div class="comments-section" >
+        <div class="form-container">
+            <h2 style="padding-bottom: 1rem">Leave a Comment</h2>
+            <form action="comment.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br>
+                <input type="submit" value="Submit Comment">
+            </form>
+            <p id="comment-status" style="text-align: center; margin-top: 1rem;"></p>
+        </div>
+        <div class="form-container"><h2>Recent Comments</h2> <div class="existing-comments" id="existing-comments-container"</div>
+        </div>
+	</div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center;">Connect with me: 
+      <a href="https://github.com/nasrinutm">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/mohamad-nasrin-bin-mohd-yusoff-696801288/">LinkedIn</a>
+    </p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
