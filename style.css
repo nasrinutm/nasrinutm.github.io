@@ -216,10 +216,6 @@ footer {
   color: #fff;
 }
 
-.dark-theme .project-card a {
-  color: #ffcc00;
-}
-
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
   .header-container {
